@@ -1,0 +1,106 @@
+.savePage {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+font-family: "Poppins", sans-serif;
+  .savingWrap {
+    width: 85%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 30px;
+    align-items: center;
+    flex-direction: column;
+.saveNote{
+  width: 80%;
+  font-size: 0.9em;
+}
+    .optionNote{
+      width: 80%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+    }
+    .optionsWrap{
+      width: 100%;
+      height:auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .optionBox{
+       margin: 1%;
+        transition: 0.8s ease;
+        cursor: pointer;
+
+
+        .saveForm{
+          width: 100%;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          .inputWrap{
+            width: 100%;
+            .group{
+              background: none;
+              border: 1px solid #dddddd;
+            }
+          }
+          .lockMoneyBtn{
+            cursor: pointer;
+            border-radius: 30px;
+            background: #0A0F0F;
+            width: 220px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.8s ease;
+            outline: none;
+            color: #ffffff;
+            &:hover{
+              background: none;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.confirmSaving{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .confirmModalContent{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    .title{
+      height: 20%;
+      font-size: 1.3em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+
+    }
+
+  }
+
+}

@@ -1,0 +1,123 @@
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.81);
+    z-index: 100000000;
+  backdrop-filter: blur(10);
+  }
+  .saveModalContainer{
+    backdrop-filter: blur(10);
+    width: 30%;
+    height: 54%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    span{
+      font-weight: 500;
+    }
+    .sendBtn{
+width: 50%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      background: #00068a;
+      height:40px;
+      color: #fff8bd;
+      border-radius: 40px;
+      justify-content: space-evenly;
+      font-weight: 600;
+    }
+  }
+
+
+@media screen
+and (max-width : 380px) {
+.modalOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.70);
+  z-index: 100000000;
+  backdrop-filter: blur(10);
+}
+.saveModalContainer{
+  backdrop-filter: blur(10);
+  width: 90%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  span{
+    font-weight: 500;
+  }
+}
+
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 400px)
+{
+  .modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 100000000;
+    backdrop-filter: blur(10);
+  }
+  .saveModalContainer{
+    backdrop-filter: blur(10);
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    span{
+    font-weight: 500;
+    }
+  }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  .modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 100000000;
+    backdrop-filter: blur(10);
+  }
+  .saveModalContainer{
+    backdrop-filter: blur(10);
+    width: 90%;
+    height: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    span{
+      font-weight: 500;
+    }
+    .sendBtn{
+
+    }
+  }
+
+}

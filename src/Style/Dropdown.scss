@@ -1,0 +1,58 @@
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-toggler {
+  width: 200px;
+  background: #f7f7f7;
+  padding: 6px 12px;
+  color: black;
+ // border: 1px solid #ececec;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+ // border-radius: 25px;
+  justify-content: space-evenly;
+  font-weight: 600;
+}
+
+.dropdown-toggler:active {
+  opacity: 0.5;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+}
+
+.dropdown-menu-item {
+  width: 200px;
+  background: #f7f7f7;
+  padding: 6px 12px;
+  color: black;
+  border: 1px solid #ececec;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.cryptoImg{
+  max-height: 20px;
+}
+
+.dropdown-menu-item:active {
+  opacity: 0.5;
+}
