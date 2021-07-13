@@ -1,0 +1,236 @@
+$primaryColor: #00068a;
+$fadeBlue: #E9EAFF;
+$darkBlue: #0A0777;
+$LightBlue: #CDCFFF;
+$accentColor: #ffef64;
+$greyBack: #F7F7F7;
+$grey: #ebebeb;
+
+.authPage {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  justify-content: space-between;
+  font-family: -apple-system, 'Poppins', 'Montserrat',
+  sans-serif;
+
+  .authComponent {
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .login {
+      display: none;
+    }
+
+    .authContainer {
+      width: 80%;
+      min-height: 600px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+
+    }
+
+    .SignUp, .login {
+      transition: 0.2s ease-out;
+      width: 90%;
+      height: auto;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .SignUpHeader, .loginHeader {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .title {
+          font-weight: 700;
+          color: #0A0F0F;
+          font-size: 2em;
+        }
+
+        .subText {
+          font-weight: 500;
+          color: #0A0F0F;
+          font-size: 0.9em;
+        }
+      }
+
+      .loginWrap {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .SignUpWrap, .loginWrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .passStrength{
+          width: 60%;
+        }
+
+        .inputCont {
+          width: 100%;
+          display: flex;
+          height: 100px;
+          align-items: center;
+          justify-content: space-between;
+
+          .inputWrap {
+            width: 45%;
+            margin: 1%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            color: #0A0F0F;
+          }
+        }
+
+        .inputWrap {
+          width: 100%;
+          margin: 1%;
+          height: 100px;
+          display: flex;
+          justify-content: space-around;
+          color: #0A0F0F;
+
+          .topLabel {
+            align-items: flex-end;
+            display: flex;
+
+          }
+
+          .group {
+            height: 55px;
+            //border: 1px solid #c4c4c4;
+            background: #FBFBFB;
+            color: #0A0F0F;
+
+            input {
+              color: #0A0F0F;
+
+
+            }
+
+
+            .label {
+              border: none;
+              color: #0A0F0F;
+            }
+          }
+        }
+      }
+
+      .bottomMessage {
+
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-weight: 600;
+          align-items: center;
+          font-size: 0.8em;
+          width: 80%;
+        }
+      }
+    }
+
+    .authButtonWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 180px;
+      width: 80%;
+
+      button {
+        height: 50px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        border-radius: 40px;
+        // transition: 0.9s ease;
+      }
+
+      .signUpBtn {
+        width: 200px;
+        background: $primaryColor;
+        color: #ffffff;
+      }
+
+      .loginBtn {
+        width: 130px;
+        border: 1px solid #5E5D5D;
+      }
+
+
+    }
+  }
+
+  .bannerDescription {
+    width: 60%;
+    min-height: 800px;
+    background: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: 0.8s ease;
+
+    .headTitle {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 2.3em;
+      width: 70%;
+    }
+
+    .bannerSubText {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1em;
+      width: 70%;
+    }
+
+    .aboutBtn {
+      width: 230px;
+      height: 40px;
+      border-radius: 40px;
+      background: rgba(24, 24, 24, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.8s ease;
+      font-family: "Poppins", sans-serif;
+
+      &:hover {
+        background: rgba(21, 21, 21, 0.69);
+      }
+    }
+  }
+
+}

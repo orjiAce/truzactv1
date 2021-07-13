@@ -1,16 +1,18 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
+  margin-top: 13%;
   z-index: 100;
   font-family: "Poppins", sans-serif;
 }
 
 .dropdown-toggler {
   width: 200px;
-  background: #f7f7f7;
+  background: #cccccc;
   padding: 6px 12px;
   color: black;
+  border-radius: 20px;
  // border: 1px solid #ececec;
   outline: none;
   font-size: 16px;

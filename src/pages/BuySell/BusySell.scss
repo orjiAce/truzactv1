@@ -1,0 +1,86 @@
+.BuySell {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  .buySellWrap {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    border-radius: 30px;
+    align-items: start;
+
+    .buyTab{
+      border-radius: 30px;
+      width: 95%;
+      height: 700px;
+padding: 20px;
+
+      .buyWrap,.sellWrap{
+        width: 95%;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .portfolioWrap{
+          width: 50%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          height: 240px;
+          .sellBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+        .title{
+          font-weight: 600;
+          font-size: 1.1em;
+        }
+        .checkCrypto{
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+        }
+        .inputWrap{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          width: 330px;
+          height: 120px;
+          .group{
+            height: 55px;
+          }
+        }
+        .BuyCryptoBtn{
+          height: 45px;
+          background: #0A0777;
+          cursor: pointer;
+          border-radius: 30px;
+          width: 220px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-weight: 500;
+          font-family: 'Poppins', sans-serif;
+          transition: 0.8s ease;
+          outline: none;
+          color: #ffffff;
+        }
+      }
+    }
+
+
+  }
+}

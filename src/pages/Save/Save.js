@@ -61,7 +61,7 @@ const Save = (props) => {
     const [amount, setAmount] = useState('')
     const [duration, setDuration] = useState('')
     const [lockPeriod, setLockPeriod] = useState(null)
-    const [payableAmount, setPayableAmount] = useState('')
+    const [payableAmount, setPayableAmount] = useState(0)
 
     const [modalOpen, setModalOpen] = useState(false)
 
@@ -188,7 +188,7 @@ const Save = (props) => {
                             </ListItem>
                             <ListItem>
                                 <ListIcon color="blue.500"/>
-                                <span>You get:</span> ₦{payableAmount}
+                                <span>You get:</span> USDT{payableAmount}
                             </ListItem>
                             {/* You can also use custom icons from react-icons */}
                             <ListItem>
@@ -213,7 +213,7 @@ const Save = (props) => {
 
                 <div className='savingWrap'>
                     <div className='saveNote'>
-                        <Badge variant='subtle' px="1" bg="brand.500" color='white'>Savings</Badge> help you lock down funds in crypto, unaccessible by no one else but you, free from devaluation and depreciation, you also earn monthly up to 15% per anum.
+                        <Badge variant='subtle' px="1" bg="brand.500" color='white'>Savings</Badge> help you lock down funds in crypto, inaccessible by no one else but you, free from devaluation and depreciation, you also earn monthly up to 15% per anum.
                     </div>
 
                     <Box as="button" borderRadius="md" bgGradient="linear(to-r, brand.100,purple.500)" color="white" px={4} h={8} className='optionNote'>
@@ -267,7 +267,7 @@ const Save = (props) => {
                                         <form method='post' action='' className='saveForm'
                                               onSubmit={(event) => validateName(event, duration, period, percentage)}>
 
-                                            <TextInput label='₦' type='number' placeHolder='Amount'
+                                            <TextInput label='USDT' type='number' placeHolder='Amount'
                                                        handleChange={e => setAmount(e.target.value)} required/>
                                             <Box d="flex" mt="2" alignItems="left">
 
@@ -354,7 +354,7 @@ const Save = (props) => {
                                         <form method='post' action='' className='saveForm'
                                               onSubmit={(e) => validateName(e, duration, period, percentage)}>
 
-                                            <TextInput label='₦' handleChange={e => setAmount(e.target.value)}
+                                            <TextInput label='USDT' handleChange={e => setAmount(e.target.value)}
                                                        type='number' placeHolder='Amount' required/>
                                             <Box d="flex" mt="2" alignItems="left">
 

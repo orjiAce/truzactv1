@@ -1,0 +1,104 @@
+.mySavings {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+
+  .mySavingsWrap {
+    width: 85%;
+    min-height: 700px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 30px;
+    align-items: center;
+flex-direction: column;
+
+
+    .savingBox{
+      width: 90%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .savingBoxTop{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 30px 30px 0 0;
+        .savingIllustration{
+
+       width: 25%;
+        }
+        .savingText{
+          font-size: 2em;
+          width: 40%;
+          text-align: center;
+          font-weight: 600;
+        }
+        .dollarSign{
+          width: 25%;
+          text-align: center;
+          font-size: 4.3em;
+           font-weight: 600;
+          font-family: 'Poppins',sans-serif;
+        }
+      }
+      .savingBoxBottom{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .amount{
+          font-weight: 600;
+          font-size: 4em;
+          font-family: 'Poppins',sans-serif;
+          height: 30%;
+        }
+        .pill{
+         width: 120px;
+          height: 35px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+        }
+      }
+    }
+    .savingBtnWrap{
+      width: 80%;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      button{
+        cursor: pointer;
+        border-radius: 10px;
+        width: 220px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.2em;
+        font-weight: 600;
+        font-family: 'Poppins',sans-serif;
+        transition: 0.8s ease;
+      }
+      .withdrawBtn{
+
+
+      }
+      .lockBtn{
+      }
+    }
+  }
+}

@@ -1,0 +1,669 @@
+@media screen and (max-width: 400px) {
+
+  //menu
+  .menuWrap {
+    display: none;
+
+  }
+
+  //notifications
+  .notificationWrap {
+    display: none;
+  }
+
+
+  //dashboard
+  .deposit {
+    display: none
+
+  }
+
+  .mobDash {
+    width: 100%;
+    height: auto;
+
+    .mobContent {
+      width: 100%;
+      display: flex;
+      height: auto;
+      margin-bottom: 30%;
+      flex-direction: column;
+      align-items: center;
+
+      .depositWrap {
+        width: 100%;
+        align-items: center;
+        height: 500px;
+        margin-bottom: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .titleCont {
+          width: 90%;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          :first-child {
+            font-size: 1.8em;
+            font-weight: 700;
+          }
+
+          :nth-child(2) {
+            font-size: 1em;
+            font-weight: 600;
+          }
+        }
+
+        .formWrap {
+          width: 90%;
+
+          .inputWrap {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .group {
+
+              height: 55px;
+
+              input {
+                outline: none;
+                background: none;
+              }
+            }
+
+            .topLabel {
+              font-weight: 600;
+              font-size: 1.1em;
+            }
+          }
+        }
+
+        .calculatedAmount {
+          width: 90%;
+          height: 25px;
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .notes {
+          width: 90%;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+
+          :first-child {
+            font-size: 1em;
+            font-weight: 700;
+          }
+
+          :nth-child(2) {
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+
+        .depositMoney {
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #0A0777;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+
+          &:hover {
+            background: #0A0F0F;
+          }
+        }
+
+        .depositMoney:disabled {
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #454545;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+
+
+      }
+      .screenShotBtn{
+        width: 200px;
+        padding: 10px;
+        margin: 5% auto;
+        font-weight: 600;
+        border-radius: 10px;
+        background: #bbacfa;
+        color: #0A0F0F;
+display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        outline: none;
+        &:hover{
+          background: #cccccc;
+        }
+      }
+
+    }
+  }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+
+  //menu
+  .menuWrap {
+    display: none;
+
+  }
+
+  //notifications
+  .notificationWrap {
+    display: none;
+  }
+
+
+  //dashboard
+  .deposit {
+    display: none
+
+  }
+
+  .mobDash {
+    width: 100%;
+    height: auto;
+
+    .mobContent {
+      width: 100%;
+      display: flex;
+      height: auto;
+      margin-bottom: 30%;
+      flex-direction: column;
+      align-items: center;
+
+      .depositWrap {
+
+        width: 100%;
+        align-items: center;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .titleCont {
+          width: 90%;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          :first-child {
+            font-size: 1.8em;
+            font-weight: 700;
+          }
+
+          :nth-child(2) {
+            font-size: 1em;
+            font-weight: 600;
+          }
+        }
+
+        .formWrap {
+          width: 90%;
+
+          .inputWrap {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .group {
+
+              height: 55px;
+
+              input {
+                outline: none;
+                background: none;
+              }
+            }
+
+            .topLabel {
+              font-weight: 600;
+              font-size: 1.1em;
+            }
+          }
+        }
+
+        .calculatedAmount {
+          width: 90%;
+          height: 25px;
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .notes {
+          width: 90%;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+
+          :first-child {
+            font-size: 1em;
+            font-weight: 700;
+          }
+
+          :nth-child(2) {
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+
+        .depositMoney {
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #0A0777;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+
+          &:hover {
+            background: #0A0F0F;
+          }
+        }
+
+        .depositMoney:disabled {
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #454545;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+  //menu
+  .menuWrap {
+    display: none;
+
+  }
+
+  //notifications
+  .notificationWrap {
+    display: none;
+  }
+
+
+  //dashboard
+  .deposit {
+    display: none
+
+  }
+a[href="#"]{
+
+}
+  .mobDash{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    .depositWrap {
+
+      width: 100%;
+      align-items: center;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .titleCont {
+        width: 90%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        :first-child {
+          font-size: 1.8em;
+          font-weight: 700;
+        }
+
+        :nth-child(2) {
+          font-size: 1em;
+          font-weight: 600;
+        }
+      }
+
+      .formWrap {
+        width: 90%;
+
+        .inputWrap {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .group {
+
+            height: 55px;
+            input{
+              outline: none;
+              background: none;
+            }
+          }
+
+          .topLabel {
+            font-weight: 600;
+            font-size: 1.1em;
+          }
+        }
+      }
+
+      .calculatedAmount {
+        width: 90%;
+        height: 25px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .notes {
+        width: 90%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        :first-child {
+          font-size: 1em;
+          font-weight: 700;
+        }
+
+        :nth-child(2) {
+          font-size: 1em;
+          font-weight: 500;
+        }
+      }
+
+      .depositMoney {
+        width: 220px;
+        height: 45px;
+        color: #ffffff;
+        background: #0A0777;
+        border-radius: 40px;
+        outline: none;
+        font-weight: 600;
+        &:hover{
+          background: #0A0F0F;
+        }
+      }
+      .depositMoney:disabled{
+        width: 220px;
+        height: 45px;
+        color: #ffffff;
+        background: #454545;
+        border-radius: 40px;
+        outline: none;
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .mobProfile, .mobDash, .mobileNav {
+    display: none;
+  }
+  .mobTransaction, .mobMenu {
+    display: none;
+  }
+  .deposit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    .depositContainer{
+      width: 85%;
+      min-height: 700px;
+      margin-top: 30px;
+      display: flex;
+      padding: 25px;
+      border-radius: 30px;
+      align-items: center;
+      flex-direction: column;
+      .depositWrap{
+
+        width: 500px;
+        align-items: center;
+        height: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .titleCont{
+          width: 90%;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          :first-child{
+            font-size: 1.8em;
+            font-weight: 700;
+          }
+          :nth-child(2){
+            font-size: 1em;
+            font-weight: 600;
+          }
+        }
+        .formWrap{
+          width: 100%;
+
+          .inputWrap{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .group{
+
+              height: 55px;
+            }
+            .topLabel{
+              font-weight: 600;
+              font-size: 1.1em;
+            }
+          }
+        }
+        .calculatedAmount{
+          width: 90%;
+          height: 35px;
+          span{
+            font-weight: 500;
+          }
+        }
+        .notes{
+          width: 90%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          :first-child{
+            font-size: 1em;
+            font-weight: 700;
+          }
+          :nth-child(2){
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+        .depositMoney{
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #0A0777;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+        .depositMoney:disabled{
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #454545;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .mobProfile, .mobDash, .mobileNav {
+    display: none;
+  }
+  .mobTransaction .mobMenu {
+    display: none;
+  }
+
+  .deposit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    .depositContainer{
+      width: 85%;
+      min-height: 700px;
+      margin-top: 30px;
+      display: flex;
+      padding: 25px;
+      border-radius: 30px;
+      align-items: center;
+      flex-direction: column;
+      .depositWrap{
+
+        width: 500px;
+        align-items: center;
+        height: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .titleCont{
+          width: 90%;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          :first-child{
+            font-size: 1.8em;
+            font-weight: 700;
+          }
+          :nth-child(2){
+            font-size: 1em;
+            font-weight: 600;
+          }
+        }
+        .formWrap{
+          width: 100%;
+
+          .inputWrap{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .group{
+
+              height: 55px;
+            }
+            .topLabel{
+              font-weight: 600;
+              font-size: 1.1em;
+            }
+          }
+        }
+        .calculatedAmount{
+          width: 90%;
+          height: 35px;
+          span{
+            font-weight: 500;
+          }
+        }
+        .notes{
+          width: 90%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          :first-child{
+            font-size: 1em;
+            font-weight: 700;
+          }
+          :nth-child(2){
+            font-size: 1em;
+            font-weight: 500;
+          }
+        }
+        .depositMoney{
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #0A0777;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+        .depositMoney:disabled{
+          width: 220px;
+          height: 45px;
+          color: #ffffff;
+          background: #454545;
+          border-radius: 40px;
+          outline: none;
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
+}

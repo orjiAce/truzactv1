@@ -1,0 +1,136 @@
+.wallets {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  .walletsWrap {
+    width: 85%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    flex-direction: column;
+
+    .walletsBanner {
+      width: 100%;
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .banner {
+        width: 95%;
+        height: 90%;
+        border-radius: 30px;
+      }
+    }
+
+    .walletsContainer {
+      width: 100%;
+      height: 100VH;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .box {
+        width: 30%;
+        height: 250px;
+
+        margin: 1%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .boxHead {
+          width: 100%;
+          height: 35%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          .coinImage{
+            border-radius: 100%;
+            height: 35px;
+            width: 35px;
+            img{
+              height: 35px;
+              width: 35px;
+            }
+          }
+          .coinName{
+            font-weight: 600;
+            font-size: 0.9em;
+          }
+        }
+
+        .boxDetails {
+          width: 100%;
+          height: 60%;
+          border-radius: 0 0 15px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          .balance {
+            width: 90%;
+            height: 30px;
+            border-radius: 30px;
+            display: flex;
+            font-weight: 500;
+            align-items: center;
+            font-size: 0.8em;
+            justify-content: space-evenly;
+
+          }
+
+          .received {
+            width: 80%;
+            height: 30px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            font-size: 0.8em;
+            justify-content: space-evenly;
+            font-weight: 500;
+          }
+
+          .bottomBtn {
+            width: 90%;
+            height: 50px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            bottom: 0;
+
+            button {
+              transition: 0.8s;
+              width: 100px;
+              height: 30px;
+              font-weight: 500;
+              cursor: pointer;
+              font-family: "Poppins", sans-serif;
+              background: none;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+
+              &:hover {
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

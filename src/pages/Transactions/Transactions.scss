@@ -1,0 +1,113 @@
+.transactions {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  .transactionsWrap{
+    width: 85%;
+    height: 800px;
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+
+    .transactionsContainer{
+      width: 60%;
+      height: 200px;
+      form{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        .inputWrap{
+          width: 90%;
+          .searchInput{
+            background: #ffffff;
+            width: 100%;
+          }
+        }
+
+      }
+      .tab-wrap {
+        width: 100%;
+        margin-top: 5%;
+        height: auto;
+      }
+    }
+    .depositBoard{
+      width: 35%;
+      border-radius: 50px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .balance{
+        font-weight: 600;
+        font-size: 2em;
+      }
+.depositBtnWrap{
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .depositBtn {
+    width: 70%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: none;
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: 0.8s ease;
+&:hover{
+  color: #0A0F0F;
+}
+    .text {
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      outline: none;
+      font-size: 1.2em;
+
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(45deg);
+    }
+
+  }
+  .illustration{
+    width: 70%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+      object-fit: cover;
+      height: 160px;
+      width: 100%;
+    }
+  }
+}
+
+    }
+  }
+
+}

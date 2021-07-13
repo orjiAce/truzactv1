@@ -1,0 +1,126 @@
+DEPOSIT.
+
+How it works: When a user completes KYC a unique account number will be created and assigned to them using the providus bank api for this.
+so when a user wants to fund their account, after inputting amount they will be required to send the requested amount to
+their unique Providus bank account and when that is done their money will be credited to their Main balance and from
+their main balance they can purchase crypo and other assest
+
+This unique account number will be attached to the user profile details when it has ben created
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+API endpoint for Buying crypto assets
+https://api.truzact.com/v0/php/buy
+method Post
+
+parameter = {
+User ID,
+amount,
+crypto
+}
+
+With this users can buy crypto and have it deposited to their account.
+The system checks if user has at least up to the requested amount (rates & charges will be included in the frontEnd) plus charges in their main balance, if they don't the
+system returns an error informing them, if they do have sufficient amount in their main balance they system buys
+the requested crypto for them and deposits it to their respective crypto wallet (Bus BTC deposits it to their BTC wallet)
+amd deducts from their main balance.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+API endpoint for Selling crypto assets
+https://api.truzact.com/v0/php/sell
+method Post
+
+parameter = {
+User ID,
+amount,
+crypto
+}
+
+User clicks the sell button then chooses from which crypto to sell , inputs the amount/quantity they want to sell (rates and charges will
+be calculated at the frontend) then waits for approval and at confirmation money will be deposited to their bank account which
+they have provided.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+API endpoint to Save assets
+https://api.truzact.com/v0/php/save
+method Post
+
+parameter = {
+User ID,
+amount,
+interest in amount,
+interest in percent,
+total return (Payable amount),
+lock period,
+crypto they want to save from,
+}
+
+User navigates to the save page, chooses a saving plan, inputs amount then chooses crypto wallets they want to save from.
+system will need to check if they have up to requested amount in their provided wallet if they do the system deducts the
+amount saves the money in USDT (interest will be included)
+
+when save is successful the system will return list of saved assets attached to the user account
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+API endpoint to Withdraw saved USDT
+https://api.truzact.com/v0/php/Withdraw
+method Post
+
+parameter = {
+User ID,
+Saved asset Id
+}
+
+
+user clicks on the saved assets to withdraw and it gets sent to their local bank account after confirmation the saved
+assets gets deleted from their list of saved saved assets.  But users can only withdraw assets that are past their lock period
+if  not it will attract extra fee
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+API endpoint to Add bank account detail
+https://api.truzact.com/v0/php/addBank
+method Post
+
+parameter = {
+User ID,
+Bank name,
+Bank account number,
+Account name
+}
+
+The system will have to verify if the user have completed KYC if no then and error message will be returned
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+API endpoint to get list of users Transactions
+https://api.truzact.com/v0/php/transactions
+method GET
+parameter = {
+User ID,
+}
+
+This API returns list of user transactions all successful deposit, withdraw, Bought and sold assets.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXTRA:
+ 1.Please can we add a column for country in the user detail
+ 2.Please can a random unique referral code be generated for each user as they sign up? e.g rfdh56sc7h

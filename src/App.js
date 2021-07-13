@@ -8,9 +8,8 @@ import { AnimatePresence } from "framer-motion";
 import Loader from 'react-loader-spinner'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
-import {store} from './redux/store'
 import axios from 'axios'
-import {SET_AUTHENTICATED} from './redux/types';
+
 
 import {logoutUser,getUserData} from "./redux/actions/userActions";
 import AuthRoute from "./components/AuthRoute";
@@ -26,24 +25,16 @@ const Home = lazy(() => import('./pages/Home/Home'))
 const Save = lazy(() => import('./pages/Save/Save'))
 const BuySell = lazy(() => import('./pages/BuySell/BuySell'))
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'))
+const DepositPage = lazy(() => import('./pages/Deposit/Deposit'))
+const AddBank = lazy(() => import('./pages/Add Bank/AddBank'))
 
 
 axios.defaults.baseURL = "https://truzact.com/api/v0/php";
 
 
-const token = localStorage.TRZACTIdToken;
-if (token) {
- // const decodedToken = jwtDecode(token);
-  //token expires in 1 month  + (30 * 86400 * 1000)
 
-  //store.dispatch({type: SET_AUTHENTICATED});
-  //axios.defaults.headers.common['Authorization'] = token;
- // store.dispatch(getUserData(token));
-  //store.dispatch(logoutUser());
-}else{
-//  store.dispatch(logoutUser());
- //window.location.href = '/';
-}
+
+
 
 function App() {
 
@@ -64,8 +55,7 @@ function App() {
                       type="Puff"
                       color="#0A0777"
                       height={100}
-                      width={100}
-                      timeout={3000} //3 secs
+                      width={100}//3 secs
 
                   />
                 </div>}>
@@ -78,7 +68,7 @@ function App() {
 
                   <Route path='/' exact component={Home}/>
                   <Route path='/home' exact component={Home}/>
-                  <AuthRoute path="/auth" exact component={AuthPage}/>
+                  <Route path="/auth" exact component={AuthPage}/>
 
                   <AuthRouteUser path="/dashboard" exact component={Dashboard}/>
                   <AuthRouteUser path="/setting" exact component={Profile}/>
@@ -88,6 +78,9 @@ function App() {
                   <AuthRouteUser path="/save" component={Save}/>
                   <AuthRouteUser path="/wallets" exact component={Wallets}/>
                   <AuthRouteUser path="/buysell" exact component={BuySell}/>
+                  <AuthRouteUser path="/deposit" exact component={DepositPage}/>
+                  <AuthRouteUser path="/addbank" exact component={AddBank}/>
+
 
 
                 </div>
